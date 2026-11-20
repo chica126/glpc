@@ -5,7 +5,7 @@ Dibangun dari template Brawijaya Comprehensive Pediatric Center (`bcpc`), dengan
 
 - URL GitHub Pages: https://yanuarnorman.github.io/glpc/
 - File utama: `index.html` (single file, inline `<style>` dan `<script>`)
-- Aset lokal: `logo.svg`, `favicon.svg`, `award.png`, `ytc.png`, `heroimage.jpeg`, `teknologi-*.jpg`, `images/partner-*.webp` (logo mitra asuransi, disalin dari repo `pci`)
+- Aset lokal: `logo.svg`, `favicon.svg`, `award.png` (versi Sep 2026, keterangan diubah jadi putih agar terbaca di hero ungu), `ytc.png`, `heroimage.jpeg`, `teknologi-*.jpg`, `images/partner-*.webp` (logo mitra asuransi, disalin dari repo `pci`)
 - Foto dokter: CDN Brawijaya (`dte49v1irn0nj.cloudfront.net/assets/<uuid>`), sama seperti BCPC
 
 ## Placeholder yang harus diganti sebelum tayang
@@ -20,11 +20,14 @@ Dibangun dari template Brawijaya Comprehensive Pediatric Center (`bcpc`), dengan
 - Reels memakai embed resmi Instagram (`embed.js`), tingginya menyesuaikan otomatis.
 
 ## Rotator linktochat yang perlu dibuat
-Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rotator berikut di app.linktochat.id (29 rotator):
+Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rotator berikut di app.linktochat.id (37 rotator):
 - sem-glpc-anak
 - sem-glpc-anorektal
+- sem-glpc-asuransi
 - sem-glpc-bedahanak
 - sem-glpc-bedahdigestif
+- sem-glpc-cakupan
+- sem-glpc-carakerja
 - sem-glpc-dralexander
 - sem-glpc-dralifi
 - sem-glpc-drannisa
@@ -47,9 +50,14 @@ Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rota
 - sem-glpc-hero
 - sem-glpc-herocta
 - sem-glpc-lambung
+- sem-glpc-lokasi
 - sem-glpc-skrining
+- sem-glpc-teknologi
+- sem-glpc-tentang
+- sem-glpc-testimoni
 - sem-glpc-tindakanendoskopi
 - sem-glpc-usus
+- sem-glpc-video
 
 ## Sumber data dokter
 Direktori resmi brawijayahospital.com/find-doctor (diakses 20 Nov 2026):
