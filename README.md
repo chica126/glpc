@@ -22,6 +22,7 @@ Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rota
 - sem-glpc-drarnetta
 - sem-glpc-drbarry
 - sem-glpc-drdiah
+- sem-glpc-drfaisal
 - sem-glpc-drhaidar
 - sem-glpc-drindah
 - sem-glpc-drkaka
@@ -43,6 +44,7 @@ Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rota
 ## Sumber data dokter
 Direktori resmi brawijayahospital.com/find-doctor (diakses 20 Nov 2026):
 Kaka Renaldi (6051), Alexander Saudale (660209), Haidar Abdullah (6309), Ruben Selamat (8275),
+Muhammad Faisal Prananda (8297),
 Arnetta Lalisang (660029), Diah Asih Lestari (5997), Indah Jamtani (4275), Syahfreadi (6099),
 Nyoto Widyo Astoro (4384), Rebekka Napitupulu (1290), Annisa Rahmania Yulman (7318), Barry Army Bakry.
 
