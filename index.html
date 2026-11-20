@@ -545,6 +545,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
   .sched-todo{color:#9A7B1A;font-style:italic;font-size:12px}
+
+  /* GLPC: video vertikal & video testimoni */
+  .b-grid.vert{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),340px));justify-content:center;align-items:start;margin-top:25px}
+  .video-frame.v916{padding-bottom:177.78%}
+  .ig-wrap{display:flex;justify-content:center;background:#fff;min-height:200px}
+  .ig-wrap .instagram-media{border-radius:0!important;box-shadow:none!important}
+  .ig-wrap blockquote>a{display:block;padding:40px 16px;text-align:center;color:var(--bw-purple);font-weight:600;text-decoration:none}
+  .vt-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:25px;align-items:start}
+  .vt-stack{display:grid;gap:25px}
+  @media (max-width:860px){.vt-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -573,11 +583,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     Kategori Layanan <span id="subnav-chevron">▼</span>
   </button>
   <div class="subnav-inner" id="subnavMenu">
-    <a href="#c-cerna" onclick="closeSubnav()">Saluran Cerna</a>
+    <a href="#c-endoskopi" onclick="closeSubnav()">Layanan Endoskopi</a>
+    <a href="#c-cerna" onclick="closeSubnav()">Keluhan Lambung &amp; Usus</a>
     <a href="#c-hati" onclick="closeSubnav()">Hati, Empedu &amp; Pankreas</a>
     <a href="#c-bedah" onclick="closeSubnav()">Bedah Digestif</a>
     <a href="#c-kanker" onclick="closeSubnav()">Tumor &amp; Kanker Saluran Cerna</a>
-    <a href="#c-anak" onclick="closeSubnav()">Pencernaan &amp; Hati Anak</a>
+    <a href="#c-anak" onclick="closeSubnav()">Pencernaan &amp; Bedah Digestif Anak</a>
   </div>
 </div>
 
@@ -597,9 +608,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Dari diagnosis lewat endoskopi hingga operasi bila diperlukan, keluhan Anda ditangani dokter yang saling terhubung, sehingga Anda tidak perlu mencari dokter dari nol di setiap tahap.</p>
         <ul class="hero-bullets">
           <li>Konsultan Gastroenterologi-Hepatologi &amp; Konsultan Bedah Digestif</li>
-          <li>Endoskopi, ERCP, hingga bedah laparoskopi</li>
+          <li>Skrining dan tindakan endoskopi, ERCP, hingga bedah laparoskopi</li>
           <li>Enam lokasi di Jakarta, Depok, dan Tangerang</li>
-          <li>Terhubung dengan Onkologi Medik dan Gastrohepatologi Anak</li>
+          <li>Terhubung dengan Onkologi Medik, Gastrohepatologi Anak &amp; Bedah Anak</li>
         </ul>
         <div class="btn-row">
           <a href="https://linkto.chat/api/pr/sem-glpc-herocta?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" class="btn btn-white" target="_blank" rel="noopener">Buat Janji Temu</a>
@@ -626,6 +637,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Pilih keluhan atau hasil pemeriksaan di bawah, kami arahkan langsung ke layanan dan dokter yang tepat.</p>
 
       <div class="chip-group">
+        <div class="cg-label">Skrining &amp; Tindakan Endoskopi</div>
+        <div class="chips">
+          <a href="#c-endoskopi" class="chip triage-chip" data-tab="tab-endo-1">Skrining gastroskopi</a>
+          <a href="#c-endoskopi" class="chip triage-chip" data-tab="tab-endo-1">Skrining kolonoskopi</a>
+          <a href="#c-endoskopi" class="chip triage-chip" data-tab="tab-endo-3">Pengangkatan polip</a>
+          <a href="#c-endoskopi" class="chip triage-chip" data-tab="tab-endo-3">Benda asing tertelan</a>
+          <a href="#c-endoskopi" class="chip triage-chip" data-tab="tab-endo-3">Balon lambung (gastric balloon)</a>
+          <a href="#c-endoskopi" class="chip triage-chip" data-tab="tab-endo-4">Batu saluran empedu (ERCP)</a>
+        </div>
+      </div>
+
+      <div class="chip-group">
         <div class="cg-label">Keluhan Saluran Cerna Atas</div>
         <div class="chips">
           <a href="#c-cerna" class="chip triage-chip" data-tab="tab-cerna-1">Maag kambuh terus</a>
@@ -650,7 +673,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cg-label">Hasil Pemeriksaan</div>
         <div class="chips">
           <a href="#c-hati" class="chip triage-chip" data-tab="tab-hati-1">SGOT/SGPT tinggi</a>
-          <a href="#c-hati" class="chip triage-chip" data-tab="tab-hati-1">Fatty liver di USG</a>
+          <a href="#c-hati" class="chip triage-chip" data-tab="tab-hati-1">Perlemakan hati (fatty liver) di USG</a>
           <a href="#c-hati" class="chip triage-chip" data-tab="tab-hati-1">Hepatitis B / C</a>
           <a href="#c-hati" class="chip triage-chip" data-tab="tab-hati-2">Batu empedu</a>
           <a href="#c-hati" class="chip triage-chip" data-tab="tab-hati-2">Kulit / mata kuning</a>
@@ -666,6 +689,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#c-kanker" class="chip triage-chip" data-tab="tab-kanker-1">Tumor saluran cerna</a>
           <a href="#c-kanker" class="chip triage-chip" data-tab="tab-kanker-2">Kemoterapi</a>
           <a href="#c-anak" class="chip triage-chip" data-tab="tab-anak-1">Pencernaan anak</a>
+          <a href="#c-anak" class="chip triage-chip" data-tab="tab-anak-2">Bedah anak</a>
         </div>
       </div>
     </div>
@@ -676,8 +700,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section" style="padding-top:0;padding-bottom:24px">
   <div class="container">
     <div class="stats">
-      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Area Layanan Pencernaan, Hati &amp; Pankreas</div></div>
-      <div class="stat"><div class="stat-num">13</div><div class="stat-label">Dokter Spesialis &amp; Subspesialis</div></div>
+      <div class="stat"><div class="stat-num">6</div><div class="stat-label">Area Layanan Pencernaan, Hati &amp; Pankreas</div></div>
+      <div class="stat"><div class="stat-num">15</div><div class="stat-label">Dokter Spesialis &amp; Subspesialis</div></div>
       <div class="stat"><div class="stat-num">6</div><div class="stat-label">Lokasi di Jakarta, Depok &amp; Tangerang</div></div>
       <div class="stat"><div class="stat-num">20</div><div class="stat-label">Tahun Pengalaman Brawijaya Hospital</div></div>
     </div>
@@ -701,7 +725,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </thead>
         <tbody>
           <tr>
-            <td><a href="#c-cerna" class="triage-chip">Saluran Cerna: Lambung &amp; Usus</a></td>
+            <td><a href="#c-endoskopi" class="triage-chip">Layanan Endoskopi</a></td>
+            <td class="na">&ndash;</td>
+            <td class="yes"><a href="#c-endoskopi" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
+            <td class="yes"><a href="#c-endoskopi" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
+            <td class="yes"><a href="#c-endoskopi" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
+            <td class="yes"><a href="#c-endoskopi" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
+            <td class="yes"><a href="#c-endoskopi" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
+          </tr>
+          <tr>
+            <td><a href="#c-cerna" class="triage-chip">Keluhan Lambung &amp; Usus</a></td>
             <td class="na">&ndash;</td>
             <td class="yes"><a href="#c-cerna" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
             <td class="yes"><a href="#c-cerna" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
@@ -737,7 +770,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <td class="yes"><a href="#c-kanker" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
           </tr>
           <tr>
-            <td><a href="#c-anak" class="triage-chip">Pencernaan &amp; Hati Anak</a></td>
+            <td><a href="#c-anak" class="triage-chip">Pencernaan &amp; Bedah Digestif Anak</a></td>
             <td class="yes"><a href="#c-anak" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
             <td class="na">&ndash;</td>
             <td class="yes"><a href="#c-anak" title="Lihat Layanan" class="y triage-chip">&#10003;</a></td>
@@ -753,29 +786,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ============================================== -->
-<!-- CLUSTER 1: SALURAN CERNA: LAMBUNG & USUS -->
+<!-- CLUSTER 1: LAYANAN ENDOSKOPI -->
 <!-- ============================================== -->
-<section class="cluster" id="c-cerna">
+<section class="cluster" id="c-endoskopi">
   <div class="container">
     <div class="cluster-header">
-      <h2>Saluran Cerna: Lambung &amp; Usus</h2>
-      <p>Maag yang terus kambuh, asam lambung naik, BAB berdarah, atau perubahan pola BAB perlu dicari penyebabnya melalui pemeriksaan yang tepat, bukan sekadar diredakan.</p>
+      <h2>Layanan Endoskopi</h2>
+      <p>Endoskopi memungkinkan dokter melihat langsung bagian dalam saluran cerna untuk skrining, diagnosis, sekaligus tindakan tanpa sayatan.</p>
     </div>
 
     <!-- TABS NAV -->
     <div class="tab-hint">Pilih sub-layanan:</div>
     <div class="tab-nav">
-      <button class="tab-btn active" onclick="openTab(event, 'tab-cerna-1')">Lambung &amp; Kerongkongan</button><button class="tab-btn" onclick="openTab(event, 'tab-cerna-2')">Usus Besar &amp; Polip</button><button class="tab-btn" onclick="openTab(event, 'tab-cerna-3')">Wasir, Fistel &amp; Fisura</button>
+      <button class="tab-btn active" onclick="openTab(event, 'tab-endo-1')">Skrining Endoskopi</button><button class="tab-btn" onclick="openTab(event, 'tab-endo-2')">Endoskopi Atas &amp; Bawah</button><button class="tab-btn" onclick="openTab(event, 'tab-endo-3')">Tindakan Endoskopi</button><button class="tab-btn" onclick="openTab(event, 'tab-endo-4')">ERCP &amp; Saluran Empedu</button>
     </div>
 
-    <div class="tab-pane active" id="tab-cerna-1">
+    <div class="tab-pane active" id="tab-endo-1">
       <div class="pane-grid">
         <div>
           <div class="svc-list-title">Yang Kami Tangani</div>
-          <div class="svc"><h4>Maag Kronis &amp; Tukak Lambung</h4><p>Nyeri ulu hati berulang meski sudah minum obat, termasuk pemeriksaan dan eradikasi infeksi H. pylori.</p></div>
-          <div class="svc"><h4>GERD / Refluks Asam</h4><p>Dada panas dan asam naik ke tenggorokan; tersedia opsi operasi anti-refluks bila obat tidak lagi cukup.</p></div>
-          <div class="svc"><h4>Sulit Menelan</h4><p>Evaluasi kerongkongan melalui gastroskopi dan esofagoskopi.</p></div>
-          <div class="svc"><h4>Muntah Darah atau BAB Hitam</h4><p>Mencari dan menangani sumber perdarahan saluran cerna atas.</p></div>
+          <div class="svc"><h4>Skrining Gastroskopi</h4><p>Pemeriksaan kerongkongan, lambung, dan usus dua belas jari untuk deteksi dini kelainan, termasuk pada orang tanpa keluhan.</p></div>
+          <div class="svc"><h4>Skrining Kolonoskopi</h4><p>Pemeriksaan seluruh usus besar untuk deteksi dini polip dan kanker usus besar, dianjurkan mulai usia 45 tahun.</p></div>
           <div class="loc-badges">
             <a href="#lok-saharjo" class="l-badge">Saharjo</a><a href="#lok-taman-mini" class="l-badge">Taman Mini</a><a href="#lok-duren-tiga" class="l-badge">Duren Tiga</a><a href="#lok-depok" class="l-badge">Depok</a><a href="#lok-tangerang" class="l-badge">Tangerang</a>
           </div>
@@ -785,12 +816,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="docs-box">
             <div class="doc">
               <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
                 <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
                 <div class="doc-r">
                   <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu dengan gastroskopi, kolonoskopi, ERCP, polipektomi, kapsul endoskopi, hingga pemasangan PEG.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -802,7 +845,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan Fellowship Endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan program <em>fellowship</em> endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralexander?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -826,7 +869,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Ruben Selamat, Sp.PD</h3>
                   <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-depok">Depok</a></div>
-                  <p class="doc-bio">Spesialis Penyakit Dalam lulusan Universitas Indonesia dengan Fellowship Endoskopi Saluran Cerna Tahap Dasar. Menangani maag, GERD, sulit menelan, gangguan BAB, hingga perdarahan saluran cerna.</p>
+                  <p class="doc-bio">Spesialis Penyakit Dalam lulusan Universitas Indonesia dengan <em>fellowship</em> tatalaksana penyakit saluran cerna dengan endoskopi tahap dasar. Menangani maag, GERD, sulit menelan, gangguan BAB, hingga perdarahan saluran cerna.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drruben?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -838,7 +881,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Muhammad Faisal Prananda, Sp.PD</h3>
                   <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-duren-tiga">Duren Tiga</a></div>
-                  <p class="doc-bio">Spesialis Penyakit Dalam dengan Fellowship Tatalaksana Penyakit Saluran Cerna dengan Endoskopi Tahap Dasar. Mengevaluasi nyeri ulu hati, asam lambung naik, sulit menelan, nyeri perut, dan perubahan pola BAB, termasuk endoskopi dan biopsi bila diperlukan.</p>
+                  <p class="doc-bio">Spesialis Penyakit Dalam dengan <em>fellowship</em> tatalaksana penyakit saluran cerna dengan endoskopi tahap dasar. Mengevaluasi nyeri ulu hati, asam lambung naik, sulit menelan, nyeri perut, dan perubahan pola BAB, termasuk endoskopi dan biopsi bila diperlukan.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drfaisal?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -850,7 +893,348 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (Nissen fundoplication), hingga pengangkatan polip usus.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (fundoplikasi Nissen), hingga pengangkatan polip usus.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drdiah?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+          </div>
+          <div class="area-cta"><a href="https://linkto.chat/api/pr/sem-glpc-skrining?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" class="btn btn-primary" target="_blank" rel="noopener">Buat Janji Temu</a><a href="#cakupan" class="btn btn-back">&#8593; Layanan Lainnya</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="tab-endo-2">
+      <div class="pane-grid">
+        <div>
+          <div class="svc-list-title">Yang Kami Tangani</div>
+          <div class="svc"><h4>Endoskopi Saluran Cerna Atas (Gastroskopi)</h4><p>Evaluasi nyeri ulu hati, refluks asam, sulit menelan, dan perdarahan saluran cerna atas, termasuk pengambilan sampel jaringan.</p></div>
+          <div class="svc"><h4>Endoskopi Saluran Cerna Bawah (Kolonoskopi)</h4><p>Evaluasi BAB berdarah, perubahan pola BAB, dan kelainan usus besar.</p></div>
+          <div class="svc"><h4>Endoskopi Kapsul</h4><p>Pemeriksaan usus halus dengan kapsul berkamera yang ditelan.</p></div>
+          <div class="loc-badges">
+            <a href="#lok-saharjo" class="l-badge">Saharjo</a><a href="#lok-taman-mini" class="l-badge">Taman Mini</a><a href="#lok-duren-tiga" class="l-badge">Duren Tiga</a><a href="#lok-depok" class="l-badge">Depok</a><a href="#lok-tangerang" class="l-badge">Tangerang</a>
+          </div>
+        </div>
+        <div>
+          <div class="docs-title">Dokter yang Menangani</div>
+          <div class="docs-box">
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="AS"><img src="https://dte49v1irn0nj.cloudfront.net/assets/c0e1cfe7-f343-49dc-8264-1dec14db6a47?width=600&quality=75&fit=cover&format=webp" alt="dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan program <em>fellowship</em> endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralexander?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="HA"><img src="https://dte49v1irn0nj.cloudfront.net/assets/cb1b6986-ec07-45ae-a9fa-cefa6376a892?width=600&quality=75&fit=cover&format=webp" alt="dr. Haidar Abdullah, Sp.PD" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Haidar Abdullah, Sp.PD</h3>
+                  <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-tangerang">Tangerang</a></div>
+                  <p class="doc-bio">Spesialis Penyakit Dalam dengan Kursus Endoskopi di FK Universitas Padjadjaran &ndash; RS Hasan Sadikin. Fokus pada evaluasi keluhan saluran cerna dan tindakan endoskopi sesuai indikasi.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drhaidar?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="RS"><img src="https://dte49v1irn0nj.cloudfront.net/assets/eeb2efc1-d22f-4929-8b1d-a5257f6f3aac?width=600&quality=75&fit=cover&format=webp" alt="dr. Ruben Selamat, Sp.PD" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Ruben Selamat, Sp.PD</h3>
+                  <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-depok">Depok</a></div>
+                  <p class="doc-bio">Spesialis Penyakit Dalam lulusan Universitas Indonesia dengan <em>fellowship</em> tatalaksana penyakit saluran cerna dengan endoskopi tahap dasar. Menangani maag, GERD, sulit menelan, gangguan BAB, hingga perdarahan saluran cerna.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drruben?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="MF"><img src="https://dte49v1irn0nj.cloudfront.net/assets/5018812c-41bf-4fcd-b232-fb6a404dee51?width=600&quality=75&fit=cover&format=webp" alt="dr. Muhammad Faisal Prananda, Sp.PD" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Muhammad Faisal Prananda, Sp.PD</h3>
+                  <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-duren-tiga">Duren Tiga</a></div>
+                  <p class="doc-bio">Spesialis Penyakit Dalam dengan <em>fellowship</em> tatalaksana penyakit saluran cerna dengan endoskopi tahap dasar. Mengevaluasi nyeri ulu hati, asam lambung naik, sulit menelan, nyeri perut, dan perubahan pola BAB, termasuk endoskopi dan biopsi bila diperlukan.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drfaisal?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="DA"><img src="https://dte49v1irn0nj.cloudfront.net/assets/1b989de1-5e86-49c8-93c3-ab08e16be4a5?width=600&quality=75&fit=cover&format=webp" alt="dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)</h3>
+                  <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a></div>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (fundoplikasi Nissen), hingga pengangkatan polip usus.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drdiah?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+          </div>
+          <div class="area-cta"><a href="https://linkto.chat/api/pr/sem-glpc-endoskopi?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" class="btn btn-primary" target="_blank" rel="noopener">Buat Janji Temu</a><a href="#cakupan" class="btn btn-back">&#8593; Layanan Lainnya</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="tab-endo-3">
+      <div class="pane-grid">
+        <div>
+          <div class="svc-list-title">Yang Kami Tangani</div>
+          <div class="svc"><h4>Polipektomi Endoskopi</h4><p>Pengangkatan polip saluran cerna tanpa operasi.</p></div>
+          <div class="svc"><h4>Skleroterapi Endoskopi</h4><p>Penyuntikan untuk menghentikan dan mencegah perdarahan, misalnya pada varises esofagus.</p></div>
+          <div class="svc"><h4>Ligasi Endoskopi</h4><p>Pengikatan varises esofagus atau hemoroid dengan cincin karet melalui endoskopi.</p></div>
+          <div class="svc"><h4>Ekstraksi Benda Asing yang Tertelan</h4><p>Pengambilan benda asing dari saluran cerna atas maupun bawah melalui endoskopi.</p></div>
+          <div class="svc"><h4>Balon Lambung (Gastric Balloon)</h4><p>Pemasangan balon di dalam lambung melalui endoskopi, tanpa operasi, sebagai bagian dari program penurunan berat badan.</p></div>
+          <div class="loc-badges">
+            <a href="#lok-saharjo" class="l-badge">Saharjo</a><a href="#lok-taman-mini" class="l-badge">Taman Mini</a>
+          </div>
+        </div>
+        <div>
+          <div class="docs-title">Dokter yang Menangani</div>
+          <div class="docs-box">
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="DA"><img src="https://dte49v1irn0nj.cloudfront.net/assets/1b989de1-5e86-49c8-93c3-ab08e16be4a5?width=600&quality=75&fit=cover&format=webp" alt="dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)</h3>
+                  <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a></div>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (fundoplikasi Nissen), hingga pengangkatan polip usus.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drdiah?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+          </div>
+          <div class="area-cta"><a href="https://linkto.chat/api/pr/sem-glpc-tindakanendoskopi?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" class="btn btn-primary" target="_blank" rel="noopener">Buat Janji Temu</a><a href="#cakupan" class="btn btn-back">&#8593; Layanan Lainnya</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="tab-endo-4">
+      <div class="pane-grid">
+        <div>
+          <div class="svc-list-title">Yang Kami Tangani</div>
+          <div class="svc"><h4>ERCP &amp; Ekstraksi Batu</h4><p>Pengeluaran batu dari saluran empedu tanpa operasi terbuka.</p></div>
+          <div class="svc"><h4>Dilatasi &amp; Pemasangan Stent Saluran Empedu</h4><p>Pelebaran saluran empedu yang menyempit dan pemasangan stent agar aliran empedu kembali lancar.</p></div>
+          <div class="loc-badges">
+            <a href="#lok-saharjo" class="l-badge">Saharjo</a><a href="#lok-taman-mini" class="l-badge">Taman Mini</a>
+          </div>
+        </div>
+        <div>
+          <div class="docs-title">Dokter yang Menangani</div>
+          <div class="docs-box">
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="AS"><img src="https://dte49v1irn0nj.cloudfront.net/assets/c0e1cfe7-f343-49dc-8264-1dec14db6a47?width=600&quality=75&fit=cover&format=webp" alt="dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan program <em>fellowship</em> endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralexander?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+          </div>
+          <div class="area-cta"><a href="https://linkto.chat/api/pr/sem-glpc-ercp?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" class="btn btn-primary" target="_blank" rel="noopener">Buat Janji Temu</a><a href="#cakupan" class="btn btn-back">&#8593; Layanan Lainnya</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- CLUSTER 2: KELUHAN LAMBUNG & USUS -->
+<!-- ============================================== -->
+<section class="cluster" id="c-cerna">
+  <div class="container">
+    <div class="cluster-header">
+      <h2>Keluhan Lambung &amp; Usus</h2>
+      <p>Maag yang terus kambuh, asam lambung naik, BAB berdarah, atau perubahan pola BAB perlu dicari penyebabnya melalui pemeriksaan yang tepat, bukan sekadar diredakan.</p>
+    </div>
+
+    <!-- TABS NAV -->
+    <div class="tab-hint">Pilih sub-layanan:</div>
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="openTab(event, 'tab-cerna-1')">Lambung &amp; Kerongkongan</button><button class="tab-btn" onclick="openTab(event, 'tab-cerna-2')">Usus Besar &amp; Polip</button><button class="tab-btn" onclick="openTab(event, 'tab-cerna-3')">Wasir, Fistel &amp; Fisura</button>
+    </div>
+
+    <div class="tab-pane active" id="tab-cerna-1">
+      <div class="pane-grid">
+        <div>
+          <div class="svc-list-title">Yang Kami Tangani</div>
+          <div class="svc"><h4>Maag Kronis &amp; Tukak Lambung</h4><p>Nyeri ulu hati berulang meski sudah minum obat, termasuk pemeriksaan dan eradikasi infeksi H. pylori.</p></div>
+          <div class="svc"><h4>GERD / Refluks Asam</h4><p>Dada panas dan asam naik ke tenggorokan; tersedia pilihan operasi antirefluks bila obat tidak lagi cukup.</p></div>
+          <div class="svc"><h4>Sulit Menelan</h4><p>Evaluasi kerongkongan melalui gastroskopi dan esofagoskopi.</p></div>
+          <div class="svc"><h4>Muntah Darah atau BAB Hitam</h4><p>Mencari dan menangani sumber perdarahan saluran cerna atas.</p></div>
+          <div class="loc-badges">
+            <a href="#lok-saharjo" class="l-badge">Saharjo</a><a href="#lok-taman-mini" class="l-badge">Taman Mini</a><a href="#lok-duren-tiga" class="l-badge">Duren Tiga</a><a href="#lok-depok" class="l-badge">Depok</a><a href="#lok-tangerang" class="l-badge">Tangerang</a>
+          </div>
+        </div>
+        <div>
+          <div class="docs-title">Dokter yang Menangani</div>
+          <div class="docs-box">
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="AS"><img src="https://dte49v1irn0nj.cloudfront.net/assets/c0e1cfe7-f343-49dc-8264-1dec14db6a47?width=600&quality=75&fit=cover&format=webp" alt="dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan program <em>fellowship</em> endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralexander?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="HA"><img src="https://dte49v1irn0nj.cloudfront.net/assets/cb1b6986-ec07-45ae-a9fa-cefa6376a892?width=600&quality=75&fit=cover&format=webp" alt="dr. Haidar Abdullah, Sp.PD" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Haidar Abdullah, Sp.PD</h3>
+                  <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-tangerang">Tangerang</a></div>
+                  <p class="doc-bio">Spesialis Penyakit Dalam dengan Kursus Endoskopi di FK Universitas Padjadjaran &ndash; RS Hasan Sadikin. Fokus pada evaluasi keluhan saluran cerna dan tindakan endoskopi sesuai indikasi.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drhaidar?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="RS"><img src="https://dte49v1irn0nj.cloudfront.net/assets/eeb2efc1-d22f-4929-8b1d-a5257f6f3aac?width=600&quality=75&fit=cover&format=webp" alt="dr. Ruben Selamat, Sp.PD" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Ruben Selamat, Sp.PD</h3>
+                  <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-depok">Depok</a></div>
+                  <p class="doc-bio">Spesialis Penyakit Dalam lulusan Universitas Indonesia dengan <em>fellowship</em> tatalaksana penyakit saluran cerna dengan endoskopi tahap dasar. Menangani maag, GERD, sulit menelan, gangguan BAB, hingga perdarahan saluran cerna.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drruben?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="MF"><img src="https://dte49v1irn0nj.cloudfront.net/assets/5018812c-41bf-4fcd-b232-fb6a404dee51?width=600&quality=75&fit=cover&format=webp" alt="dr. Muhammad Faisal Prananda, Sp.PD" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Muhammad Faisal Prananda, Sp.PD</h3>
+                  <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-duren-tiga">Duren Tiga</a></div>
+                  <p class="doc-bio">Spesialis Penyakit Dalam dengan <em>fellowship</em> tatalaksana penyakit saluran cerna dengan endoskopi tahap dasar. Mengevaluasi nyeri ulu hati, asam lambung naik, sulit menelan, nyeri perut, dan perubahan pola BAB, termasuk endoskopi dan biopsi bila diperlukan.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drfaisal?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="DA"><img src="https://dte49v1irn0nj.cloudfront.net/assets/1b989de1-5e86-49c8-93c3-ab08e16be4a5?width=600&quality=75&fit=cover&format=webp" alt="dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)</h3>
+                  <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a></div>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (fundoplikasi Nissen), hingga pengangkatan polip usus.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drdiah?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -862,7 +1246,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Arnetta Naomi Louise Lalisang, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta proktologi (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta penyakit anus dan rektum (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drarnetta?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -878,9 +1262,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="svc-list-title">Yang Kami Tangani</div>
           <div class="svc"><h4>BAB Berdarah</h4><p>Kolonoskopi untuk menemukan sumber perdarahan di usus besar.</p></div>
-          <div class="svc"><h4>Polip &amp; Skrining Kanker Usus</h4><p>Polip yang ditemukan saat kolonoskopi umumnya dapat langsung diangkat. Skrining dianjurkan mulai usia 45 tahun.</p></div>
+          <div class="svc"><h4>Polip &amp; Skrining Kanker Usus</h4><p>Polip yang ditemukan saat kolonoskopi umumnya dapat langsung diangkat (polipektomi endoskopi). Skrining dianjurkan mulai usia 45 tahun.</p></div>
           <div class="svc"><h4>Diare atau Sembelit Berkepanjangan</h4><p>Evaluasi penyebab perubahan pola BAB yang menetap.</p></div>
-          <div class="svc"><h4>Endoskopi Kapsul</h4><p>Pemeriksaan usus halus dengan kapsul berkamera bila diperlukan.</p></div>
+          <div class="svc"><h4>Endoskopi Kapsul</h4><p>Pemeriksaan usus halus dengan kapsul berkamera yang ditelan, bila diperlukan.</p></div>
           <div class="loc-badges">
             <a href="#lok-saharjo" class="l-badge">Saharjo</a><a href="#lok-taman-mini" class="l-badge">Taman Mini</a><a href="#lok-duren-tiga" class="l-badge">Duren Tiga</a><a href="#lok-depok" class="l-badge">Depok</a><a href="#lok-tangerang" class="l-badge">Tangerang</a>
           </div>
@@ -890,12 +1274,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="docs-box">
             <div class="doc">
               <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
                 <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
                 <div class="doc-r">
                   <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu dengan gastroskopi, kolonoskopi, ERCP, polipektomi, kapsul endoskopi, hingga pemasangan PEG.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -907,7 +1303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan Fellowship Endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan program <em>fellowship</em> endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralexander?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -931,7 +1327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Ruben Selamat, Sp.PD</h3>
                   <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-depok">Depok</a></div>
-                  <p class="doc-bio">Spesialis Penyakit Dalam lulusan Universitas Indonesia dengan Fellowship Endoskopi Saluran Cerna Tahap Dasar. Menangani maag, GERD, sulit menelan, gangguan BAB, hingga perdarahan saluran cerna.</p>
+                  <p class="doc-bio">Spesialis Penyakit Dalam lulusan Universitas Indonesia dengan <em>fellowship</em> tatalaksana penyakit saluran cerna dengan endoskopi tahap dasar. Menangani maag, GERD, sulit menelan, gangguan BAB, hingga perdarahan saluran cerna.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drruben?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -943,7 +1339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Muhammad Faisal Prananda, Sp.PD</h3>
                   <span class="doc-role-badge">Penyakit Dalam &middot; Endoskopi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-duren-tiga">Duren Tiga</a></div>
-                  <p class="doc-bio">Spesialis Penyakit Dalam dengan Fellowship Tatalaksana Penyakit Saluran Cerna dengan Endoskopi Tahap Dasar. Mengevaluasi nyeri ulu hati, asam lambung naik, sulit menelan, nyeri perut, dan perubahan pola BAB, termasuk endoskopi dan biopsi bila diperlukan.</p>
+                  <p class="doc-bio">Spesialis Penyakit Dalam dengan <em>fellowship</em> tatalaksana penyakit saluran cerna dengan endoskopi tahap dasar. Mengevaluasi nyeri ulu hati, asam lambung naik, sulit menelan, nyeri perut, dan perubahan pola BAB, termasuk endoskopi dan biopsi bila diperlukan.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drfaisal?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -955,7 +1351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (Nissen fundoplication), hingga pengangkatan polip usus.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (fundoplikasi Nissen), hingga pengangkatan polip usus.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drdiah?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -970,7 +1366,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="pane-grid">
         <div>
           <div class="svc-list-title">Yang Kami Tangani</div>
-          <div class="svc"><h4>Hemoroid (Wasir)</h4><p>Penanganan sesuai derajat, dari terapi konservatif hingga tindakan bedah.</p></div>
+          <div class="svc"><h4>Hemoroid (Wasir)</h4><p>Penanganan sesuai derajat, dari obat-obatan dan ligasi endoskopi hingga tindakan bedah.</p></div>
           <div class="svc"><h4>Fistel Perianal</h4><p>Saluran abnormal di sekitar anus yang menimbulkan nanah atau nyeri berulang.</p></div>
           <div class="svc"><h4>Fisura Ani</h4><p>Luka robek di anus yang menyebabkan nyeri hebat saat BAB.</p></div>
           <div class="loc-badges">
@@ -982,12 +1378,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="docs-box">
             <div class="doc">
               <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
                 <div class="doc-ph" data-initials="AN"><img src="https://dte49v1irn0nj.cloudfront.net/assets/c04a09d9-f6cf-4a92-9c38-1abab4a92449?width=600&quality=75&fit=cover&format=webp" alt="dr. Arnetta Naomi Louise Lalisang, Sp.B, Subsp.BD (K)" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
                 <div class="doc-r">
                   <h3>dr. Arnetta Naomi Louise Lalisang, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta proktologi (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta penyakit anus dan rektum (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drarnetta?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -999,7 +1407,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Syahfreadi, Sp.B, Subsp.BD (K), FICS</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-tangerang">Tangerang</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif dan Fellow of the International College of Surgeons. Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif bergelar FICS (<em>Fellow of the International College of Surgeons</em>). Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drsyahfreadi?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1014,7 +1422,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ============================================== -->
-<!-- CLUSTER 2: HATI, EMPEDU & PANKREAS -->
+<!-- CLUSTER 3: HATI, EMPEDU & PANKREAS -->
 <!-- ============================================== -->
 <section class="cluster" id="c-hati">
   <div class="container">
@@ -1026,17 +1434,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- TABS NAV -->
     <div class="tab-hint">Pilih sub-layanan:</div>
     <div class="tab-nav">
-      <button class="tab-btn active" onclick="openTab(event, 'tab-hati-1')">Hepatitis &amp; Fatty Liver</button><button class="tab-btn" onclick="openTab(event, 'tab-hati-2')">Empedu &amp; Pankreas</button>
+      <button class="tab-btn active" onclick="openTab(event, 'tab-hati-1')">Hepatitis &amp; Perlemakan Hati (Fatty Liver)</button><button class="tab-btn" onclick="openTab(event, 'tab-hati-2')">Empedu &amp; Pankreas</button>
     </div>
 
     <div class="tab-pane active" id="tab-hati-1">
       <div class="pane-grid">
         <div>
           <div class="svc-list-title">Yang Kami Tangani</div>
-          <div class="svc"><h4>SGOT/SGPT Tinggi</h4><p>Evaluasi lanjutan hasil medical check-up yang tidak normal.</p></div>
-          <div class="svc"><h4>Perlemakan Hati (Fatty Liver)</h4><p>Menilai derajat perlemakan dan mencegah progresi ke fibrosis.</p></div>
+          <div class="svc"><h4>SGOT/SGPT Tinggi</h4><p>Evaluasi lanjutan hasil pemeriksaan kesehatan berkala (MCU) yang tidak normal.</p></div>
+          <div class="svc"><h4>Perlemakan Hati (Fatty Liver)</h4><p>Menilai derajat perlemakan dan mencegah perburukan menjadi fibrosis.</p></div>
           <div class="svc"><h4>Hepatitis B &amp; C</h4><p>Pemantauan dan terapi hepatitis kronis.</p></div>
-          <div class="svc"><h4>Sirosis &amp; Komplikasinya</h4><p>Penanganan kuning, perut membesar (asites), dan perdarahan varises.</p></div>
+          <div class="svc"><h4>Sirosis &amp; Komplikasinya</h4><p>Penanganan kuning, perut membesar (asites), serta varises esofagus dengan skleroterapi atau ligasi endoskopi.</p></div>
           <div class="loc-badges">
             <a href="#lok-saharjo" class="l-badge">Saharjo</a><a href="#lok-taman-mini" class="l-badge">Taman Mini</a>
           </div>
@@ -1046,12 +1454,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="docs-box">
             <div class="doc">
               <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
                 <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
                 <div class="doc-r">
                   <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu dengan gastroskopi, kolonoskopi, ERCP, polipektomi, kapsul endoskopi, hingga pemasangan PEG.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1063,7 +1483,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan Fellowship Endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan program <em>fellowship</em> endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralexander?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1079,7 +1499,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="svc-list-title">Yang Kami Tangani</div>
           <div class="svc"><h4>Batu Kantong Empedu</h4><p>Kolesistektomi laparoskopi maupun terbuka.</p></div>
-          <div class="svc"><h4>Batu &amp; Sumbatan Saluran Empedu</h4><p>ERCP untuk membuka sumbatan tanpa operasi terbuka.</p></div>
+          <div class="svc"><h4>Batu &amp; Sumbatan Saluran Empedu</h4><p>ERCP untuk mengeluarkan batu, serta dilatasi dan pemasangan <em>stent</em> bila saluran empedu menyempit.</p></div>
           <div class="svc"><h4>Pankreatitis</h4><p>Evaluasi dan tatalaksana peradangan pankreas.</p></div>
           <div class="svc"><h4>Tumor Hati, Empedu &amp; Pankreas</h4><p>Evaluasi dan bedah hepatobilier.</p></div>
           <div class="loc-badges">
@@ -1091,12 +1511,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="docs-box">
             <div class="doc">
               <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
                 <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
                 <div class="doc-r">
                   <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu dengan gastroskopi, kolonoskopi, ERCP, polipektomi, kapsul endoskopi, hingga pemasangan PEG.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1108,7 +1540,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan Fellowship Endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan program <em>fellowship</em> endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralexander?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1132,7 +1564,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Syahfreadi, Sp.B, Subsp.BD (K), FICS</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-tangerang">Tangerang</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif dan Fellow of the International College of Surgeons. Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif bergelar FICS (<em>Fellow of the International College of Surgeons</em>). Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drsyahfreadi?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1144,7 +1576,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Arnetta Naomi Louise Lalisang, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta proktologi (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta penyakit anus dan rektum (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drarnetta?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1159,7 +1591,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ============================================== -->
-<!-- CLUSTER 3: BEDAH DIGESTIF -->
+<!-- CLUSTER 4: BEDAH DIGESTIF -->
 <!-- ============================================== -->
 <section class="cluster" id="c-bedah">
   <div class="container">
@@ -1206,7 +1638,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Syahfreadi, Sp.B, Subsp.BD (K), FICS</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-tangerang">Tangerang</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif dan Fellow of the International College of Surgeons. Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif bergelar FICS (<em>Fellow of the International College of Surgeons</em>). Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drsyahfreadi?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1221,7 +1653,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="pane-grid">
         <div>
           <div class="svc-list-title">Yang Kami Tangani</div>
-          <div class="svc"><h4>Bedah Saluran Cerna Atas</h4><p>Termasuk operasi anti-refluks (Nissen fundoplication).</p></div>
+          <div class="svc"><h4>Bedah Saluran Cerna Atas</h4><p>Termasuk operasi antirefluks (fundoplikasi Nissen).</p></div>
           <div class="svc"><h4>Bedah Kolorektal</h4><p>Reseksi usus besar untuk tumor maupun penyakit usus lainnya.</p></div>
           <div class="svc"><h4>Stoma</h4><p>Pembuatan, perawatan, dan penutupan ileostomi atau kolostomi.</p></div>
           <div class="svc"><h4>Laparoskopi</h4><p>Bedah minimal invasif untuk saluran cerna dan empedu.</p></div>
@@ -1239,7 +1671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Arnetta Naomi Louise Lalisang, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta proktologi (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta penyakit anus dan rektum (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drarnetta?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1251,7 +1683,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (Nissen fundoplication), hingga pengangkatan polip usus.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (fundoplikasi Nissen), hingga pengangkatan polip usus.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drdiah?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1275,7 +1707,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Syahfreadi, Sp.B, Subsp.BD (K), FICS</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-tangerang">Tangerang</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif dan Fellow of the International College of Surgeons. Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif bergelar FICS (<em>Fellow of the International College of Surgeons</em>). Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drsyahfreadi?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1290,7 +1722,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ============================================== -->
-<!-- CLUSTER 4: TUMOR & KANKER SALURAN CERNA -->
+<!-- CLUSTER 5: TUMOR & KANKER SALURAN CERNA -->
 <!-- ============================================== -->
 <section class="cluster" id="c-kanker">
   <div class="container">
@@ -1321,12 +1753,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="docs-box">
             <div class="doc">
               <div class="doc-lay">
+                <div class="doc-ph noimg" data-initials="MJ" title="Foto belum tersedia">MJ</div><!-- PLACEHOLDER: foto dokter belum ada di CDN Brawijaya -->
+                <div class="doc-r">
+                  <h3>dr. Mohammad Julwan Pribadi, Sp.PD, Subsp.GEH</h3>
+                  <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi. Menangani endoskopi diagnostik dan terapeutik: gastroskopi, kolonoskopi, ERCP, penanganan perdarahan saluran cerna, skleroterapi dan ligasi varises esofagus, ligasi hemoroid, ekstraksi benda asing yang tertelan, hingga pemasangan balon lambung (<em>gastric balloon</em>).</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drjulwan?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+            <div class="doc">
+              <div class="doc-lay">
                 <div class="doc-ph" data-initials="KR"><img src="https://dte49v1irn0nj.cloudfront.net/assets/fe55ecd9-9928-4a63-bddf-020a147b1b9b?width=600&quality=75&fit=cover&format=webp" alt="Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
                 <div class="doc-r">
                   <h3>Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a> &middot; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu dengan gastroskopi, kolonoskopi, ERCP, polipektomi, kapsul endoskopi, hingga pemasangan PEG.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi bergelar Doktor. Menangani lambung, hati, pankreas, usus, dan kantong empedu melalui gastroskopi, kolonoskopi, ERCP, polipektomi, endoskopi kapsul, hingga pemasangan selang makan lewat dinding perut (PEG).</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drkaka?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1338,7 +1782,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Alexander Saudale, Sp.PD, Subsp.GEH, FINASIM</h3>
                   <span class="doc-role-badge anchor">Konsultan Gastroenterologi-Hepatologi</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan Fellowship Endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
+                  <p class="doc-bio">Konsultan Gastroenterologi-Hepatologi lulusan program <em>fellowship</em> endoskopi FKUI&ndash;RSCM. Fokus pada endoskopi saluran cerna atas dan bawah, ERCP, serta evaluasi hati: hepatitis B/C, perlemakan hati, dan sirosis.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralexander?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1350,7 +1794,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Arnetta Naomi Louise Lalisang, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta proktologi (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan UI&ndash;RSCM. Menangani tumor saluran cerna, hati, pankreas, dan empedu, bedah kolorektal, serta penyakit anus dan rektum (fistel, fisura, hemoroid), termasuk dengan laparoskopi.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drarnetta?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1362,7 +1806,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Diah Asih Lestari, Sp.B, Subsp.BD (K)</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-saharjo">Saharjo</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (Nissen fundoplication), hingga pengangkatan polip usus.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif lulusan Universitas Indonesia yang menggabungkan bedah dan endoskopi: gastroskopi, endoskopi kapsul, operasi refluks (fundoplikasi Nissen), hingga pengangkatan polip usus.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drdiah?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1386,7 +1830,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>dr. Syahfreadi, Sp.B, Subsp.BD (K), FICS</h3>
                   <span class="doc-role-badge anchor">Konsultan Bedah Digestif</span>
                   <div class="doc-loc">&#128205; <a href="#lok-tangerang">Tangerang</a></div>
-                  <p class="doc-bio">Konsultan Bedah Digestif dan Fellow of the International College of Surgeons. Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
+                  <p class="doc-bio">Konsultan Bedah Digestif bergelar FICS (<em>Fellow of the International College of Surgeons</em>). Menangani usus buntu, hernia, tumor saluran cerna, kantong empedu (laparoskopi), wasir dan fistula, serta stoma.</p>
                 </div>
               </div>
               <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-drsyahfreadi?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
@@ -1444,19 +1888,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- ============================================== -->
-<!-- CLUSTER 5: PENCERNAAN & HATI ANAK -->
+<!-- CLUSTER 6: PENCERNAAN & BEDAH DIGESTIF ANAK -->
 <!-- ============================================== -->
 <section class="cluster" id="c-anak" style="border-bottom:none;">
   <div class="container">
     <div class="cluster-header">
-      <h2>Pencernaan &amp; Hati Anak</h2>
-      <p>Keluhan pencernaan pada bayi dan anak ditangani Subspesialis Gastrohepatologi Anak, terhubung dengan Brawijaya Comprehensive Pediatric Center (CPC).</p>
+      <h2>Pencernaan &amp; Bedah Digestif Anak</h2>
+      <p>Keluhan pencernaan dan kondisi bedah saluran cerna pada bayi hingga remaja ditangani Subspesialis Gastrohepatologi Anak dan Konsultan Bedah Anak, terhubung dengan Brawijaya Comprehensive Pediatric Center (CPC).</p>
     </div>
 
     <!-- TABS NAV -->
     <div class="tab-hint">Pilih sub-layanan:</div>
     <div class="tab-nav">
-      <button class="tab-btn active" onclick="openTab(event, 'tab-anak-1')">Gastrohepatologi Anak</button>
+      <button class="tab-btn active" onclick="openTab(event, 'tab-anak-1')">Gastrohepatologi Anak</button><button class="tab-btn" onclick="openTab(event, 'tab-anak-2')">Bedah Digestif Anak</button>
     </div>
 
     <div class="tab-pane active" id="tab-anak-1">
@@ -1503,32 +1947,118 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
+    <div class="tab-pane" id="tab-anak-2">
+      <div class="pane-grid">
+        <div>
+          <div class="svc-list-title">Yang Kami Tangani</div>
+          <div class="svc"><h4>Usus Buntu pada Anak</h4><p>Apendektomi untuk apendisitis pada anak.</p></div>
+          <div class="svc"><h4>Hernia pada Anak</h4><p>Herniotomi untuk hernia inguinal dan umbilikal.</p></div>
+          <div class="svc"><h4>Bedah Saluran Cerna Anak</h4><p>Prosedur bedah pada saluran cerna dan organ dalam, dari bayi baru lahir hingga remaja.</p></div>
+          <div class="loc-badges">
+            <a href="#lok-taman-mini" class="l-badge">Taman Mini</a>
+          </div>
+        </div>
+        <div>
+          <div class="docs-title">Dokter yang Menangani</div>
+          <div class="docs-box">
+            <div class="doc">
+              <div class="doc-lay">
+                <div class="doc-ph" data-initials="AM"><img src="https://dte49v1irn0nj.cloudfront.net/assets/84b99a19-b217-43fe-810f-2b58153b5641?width=600&quality=75&fit=cover&format=webp" alt="dr. Alifi Maulidyan, Sp.BA, Subsp.BA DA (K)" loading="lazy" onerror="var p=this.closest('.doc-ph');p.classList.add('noimg');p.textContent=p.getAttribute('data-initials')||'';this.remove()"></div>
+                <div class="doc-r">
+                  <h3>dr. Alifi Maulidyan, Sp.BA, Subsp.BA DA (K)</h3>
+                  <span class="doc-role-badge anchor">Konsultan Bedah Anak</span>
+                  <div class="doc-loc">&#128205; <a href="#lok-taman-mini">Taman Mini</a></div>
+                  <p class="doc-bio">Konsultan Bedah Anak yang menangani pasien dari bayi baru lahir hingga remaja, termasuk apendektomi, herniotomi, dan prosedur bedah pada saluran cerna dan organ dalam anak.</p>
+                </div>
+              </div>
+              <div class="doc-detail-box"><a class="btn-sched" href="https://linkto.chat/api/pr/sem-glpc-dralifi?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" target="_blank" rel="noopener"><svg class="ic"><use href="#ic-wa"></use></svg>Tanya Jadwal</a></div>
+            </div>
+          </div>
+          <div class="area-cta"><a href="https://linkto.chat/api/pr/sem-glpc-bedahanak?source=https%3A%2F%2Fapp.linktochat.id%2Fpage-rotators&isRedirect=true" class="btn btn-primary" target="_blank" rel="noopener">Buat Janji Temu</a><a href="#cakupan" class="btn btn-back">&#8593; Layanan Lainnya</a></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- VIDEO GRID (PLACEHOLDER: ganti dengan video YouTube edukasi Gastro) -->
-<div class="brawijaya-grid-wrapper">
+<!-- VIDEO EDUKASI -->
+<div class="brawijaya-grid-wrapper" id="video">
+  <span class="eyebrow">Video Edukasi</span>
+  <h2 class="section-title">Kenali Keluhan dan Tindakannya</h2>
+  <p class="section-subtitle">Penjelasan singkat dari tim Brawijaya seputar endoskopi, batu empedu, hernia, hingga kesehatan hati.</p>
   <div class="b-grid">
     <div class="b-card">
-      <div class="video-frame"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;background:linear-gradient(135deg,#3F1C54,#5E2D79);color:rgba(255,255,255,.85);font-size:13px;text-align:center;padding:16px"><b style="font-size:15px;color:#fff">PLACEHOLDER VIDEO</b>Ganti dengan &lt;iframe src="https://www.youtube.com/embed/ID_VIDEO"&gt;</div></div>
+      <div class="video-frame"><iframe src="https://www.youtube.com/embed/KFOWQ4y9eww" title="Sering Nyeri Ulu Hati &amp; Mual? Kenali Prosedur Endoskopi untuk Saluran Cerna!" loading="lazy" allowfullscreen></iframe></div>
       <div class="card-content">
-        <span class="cat-label">Edukasi Endoskopi</span><h3 class="card-title">[Placeholder] Apa Itu Endoskopi dan Kapan Perlu Dilakukan?</h3>
+        <span class="cat-label">Endoskopi</span><h3 class="card-title">Sering Nyeri Ulu Hati &amp; Mual? Kenali Prosedur Endoskopi untuk Saluran Cerna!</h3>
       </div>
     </div>
     <div class="b-card">
-      <div class="video-frame"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;background:linear-gradient(135deg,#3F1C54,#5E2D79);color:rgba(255,255,255,.85);font-size:13px;text-align:center;padding:16px"><b style="font-size:15px;color:#fff">PLACEHOLDER VIDEO</b>Ganti dengan &lt;iframe src="https://www.youtube.com/embed/ID_VIDEO"&gt;</div></div>
+      <div class="video-frame"><iframe src="https://www.youtube.com/embed/-AmVj5zbUfQ" title="HeyDok Podcast: Kenali Batu Empedu dan Cara Mengatasinya!" loading="lazy" allowfullscreen></iframe></div>
       <div class="card-content">
-        <span class="cat-label">Hati</span><h3 class="card-title">[Placeholder] SGPT Tinggi dan Fatty Liver: Apa yang Harus Dilakukan?</h3>
+        <span class="cat-label">Batu Empedu</span><h3 class="card-title">HeyDok Podcast: Kenali Batu Empedu dan Cara Mengatasinya!</h3>
       </div>
     </div>
     <div class="b-card">
-      <div class="video-frame"><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;background:linear-gradient(135deg,#3F1C54,#5E2D79);color:rgba(255,255,255,.85);font-size:13px;text-align:center;padding:16px"><b style="font-size:15px;color:#fff">PLACEHOLDER VIDEO</b>Ganti dengan &lt;iframe src="https://www.youtube.com/embed/ID_VIDEO"&gt;</div></div>
+      <div class="video-frame"><iframe src="https://www.youtube.com/embed/qe6dR71_OYs" title="#CeritaDariBrawijaya bersama dr. Indah Jamtani, Sp.B, Subsp.BD (K)" loading="lazy" allowfullscreen></iframe></div>
       <div class="card-content">
-        <span class="cat-label">Bedah Digestif</span><h3 class="card-title">[Placeholder] Batu Empedu: Kapan Perlu Operasi Laparoskopi?</h3>
+        <span class="cat-label">Hernia</span><h3 class="card-title">#CeritaDariBrawijaya bersama dr. Indah Jamtani, Sp.B, Subsp.BD (K)</h3>
+      </div>
+    </div>
+  </div>
+  <div class="b-grid vert">
+    <div class="b-card">
+      <div class="video-frame v916"><iframe src="https://www.youtube.com/embed/ROrqqSf1XPQ" title="Gangguan Hati yang Sering Diabaikan" loading="lazy" allowfullscreen></iframe></div>
+      <div class="card-content">
+        <span class="cat-label">Kesehatan Hati</span><h3 class="card-title">Gangguan Hati yang Sering Diabaikan</h3>
+      </div>
+    </div>
+    <div class="b-card">
+      <div class="ig-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DfPDBbqvGoU/" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;max-width:540px;min-width:260px;width:100%;padding:0"><a href="https://www.instagram.com/reel/DfPDBbqvGoU/" target="_blank" rel="noopener">Tonton video di Instagram</a></blockquote></div>
+      <div class="card-content">
+        <span class="cat-label">Maag &amp; GERD</span><h3 class="card-title">Video Edukasi Maag &amp; GERD</h3>
+      </div>
+    </div>
+    <div class="b-card">
+      <div class="ig-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPsfYXUCU9H/" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;max-width:540px;min-width:260px;width:100%;padding:0"><a href="https://www.instagram.com/reel/DPsfYXUCU9H/" target="_blank" rel="noopener">Tonton video di Instagram</a></blockquote></div>
+      <div class="card-content">
+        <span class="cat-label">Endoskopi Kapsul</span><h3 class="card-title">Video Edukasi Endoskopi Kapsul</h3>
       </div>
     </div>
   </div>
 </div>
+
+<!-- VIDEO TESTIMONI -->
+<section class="section section-soft" id="testimoni-video">
+  <div class="container">
+    <span class="eyebrow">Kisah Pasien</span>
+    <h2 class="section-title">Cerita Pasien Gastro, Liver &amp; Pancreas Center</h2>
+    <p class="section-subtitle">Pengalaman pasien yang menjalani pemeriksaan dan tindakan bersama tim kami.</p>
+    <div class="vt-grid">
+      <div class="vt-stack">
+    <div class="b-card">
+      <div class="video-frame"><iframe src="https://www.youtube.com/embed/zA2goL3_gTg" title="Novita Angie Atasi Gangguan Saluran Cerna dengan Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH" loading="lazy" allowfullscreen></iframe></div>
+      <div class="card-content">
+        <span class="cat-label">Kisah Pasien &middot; Saluran Cerna</span><h3 class="card-title">Novita Angie Atasi Gangguan Saluran Cerna dengan Dr. dr. Kaka Renaldi, Sp.PD, Subsp.GEH</h3>
+      </div>
+    </div>
+    <div class="b-card">
+      <div class="video-frame"><iframe src="https://www.youtube.com/embed/UJHoM2KqT-8" title="Testimoni Pasien Ibu Ari: Tindakan Laparoskopi" loading="lazy" allowfullscreen></iframe></div>
+      <div class="card-content">
+        <span class="cat-label">Kisah Pasien &middot; Laparoskopi</span><h3 class="card-title">Testimoni Pasien Ibu Ari: Tindakan Laparoskopi</h3>
+      </div>
+    </div>
+      </div>
+    <div class="b-card">
+      <div class="ig-wrap"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DVU8lttCXYS/" data-instgrm-version="14" style="background:#FFF;border:0;margin:0;max-width:540px;min-width:260px;width:100%;padding:0"><a href="https://www.instagram.com/reel/DVU8lttCXYS/" target="_blank" rel="noopener">Tonton video di Instagram</a></blockquote></div>
+      <div class="card-content">
+        <span class="cat-label">Kisah Pasien &middot; Endoskopi Kapsul</span><h3 class="card-title">Pengalaman Pasien Menjalani Endoskopi Kapsul</h3>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
 
 <!-- FASILITAS -->
 <section class="section section-soft">
@@ -1897,5 +2427,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   })();
 </script>
 
+<script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>
