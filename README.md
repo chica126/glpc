@@ -13,8 +13,10 @@ Dibangun dari template Brawijaya Comprehensive Pediatric Center (`bcpc`), dengan
 2. Foto dr. Mohammad Julwan Pribadi: belum ada di CDN Brawijaya, sementara tampil inisial "MJ". Ganti `<div class="doc-ph noimg" ...>MJ</div>` dengan elemen foto seperti dokter lain setelah foto diunggah ke Directus.
 
 ## Video
-- Edukasi (YouTube): KFOWQ4y9eww, -AmVj5zbUfQ, qe6dR71_OYs; vertikal: Shorts ROrqqSf1XPQ, Instagram Reels DfPDBbqvGoU, DPsfYXUCU9H
-- Testimoni: YouTube zA2goL3_gTg, UJHoM2KqT-8; Instagram Reels DVU8lttCXYS
+- Semua iframe YouTube memakai atribut embed resmi (allow + referrerpolicy). Pratinjau dari file lokal (file://) dapat menampilkan "Error 153"; uji di URL GitHub Pages.
+- Edukasi (YouTube): KFOWQ4y9eww, -AmVj5zbUfQ, qe6dR71_OYs; vertikal: Shorts ROrqqSf1XPQ, Instagram Reels DfPDBbqvGoU
+- Testimoni: YouTube zA2goL3_gTg, UJHoM2KqT-8
+- Video endoskopi kapsul (Reels DPsfYXUCU9H, DVU8lttCXYS) tidak dipasang karena endoskopi kapsul di luar scope layanan.
 - Reels memakai embed resmi Instagram (`embed.js`), tingginya menyesuaikan otomatis.
 
 ## Rotator linktochat yang perlu dibuat
