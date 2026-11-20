@@ -5,12 +5,12 @@ Dibangun dari template Brawijaya Comprehensive Pediatric Center (`bcpc`), dengan
 
 - URL GitHub Pages: https://yanuarnorman.github.io/glpc/
 - File utama: `index.html` (single file, inline `<style>` dan `<script>`)
-- Aset lokal: `logo.svg`, `favicon.svg`, `award.png`, `ytc.png`, `heroimage.jpeg`
+- Aset lokal: `logo.svg`, `favicon.svg`, `award.png`, `ytc.png`, `heroimage.jpeg`, `teknologi-*.jpg`
 - Foto dokter: CDN Brawijaya (`dte49v1irn0nj.cloudfront.net/assets/<uuid>`), sama seperti BCPC
 
 ## Placeholder yang harus diganti sebelum tayang
 1. `heroimage.jpeg`: masih gambar placeholder. Ganti dengan foto Center (1024 x 687 px, nama file tetap sama). File ini juga dipakai sebagai og:image.
-2. Foto dr. Mohammad Julwan Pribadi: belum ada di CDN Brawijaya, sementara tampil inisial "MJ". Ganti `<div class="doc-ph noimg" ...>MJ</div>` dengan elemen foto seperti dokter lain setelah foto diunggah ke Directus.
+2. Gambar seksi "Teknologi Modern Kami": `teknologi-ct-mri.jpg`, `teknologi-endoskopi.jpg`, `teknologi-ercp.jpg`, `teknologi-laparoskopi.jpg` masih placeholder. Ganti dengan foto alat/tindakan (800 x 940 px, nama file tetap sama).
 
 ## Video
 - Semua iframe YouTube memakai atribut embed resmi (allow + referrerpolicy). Pratinjau dari file lokal (file://) dapat menampilkan "Error 153"; uji di URL GitHub Pages.
@@ -53,7 +53,7 @@ Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rota
 
 ## Sumber data dokter
 Direktori resmi brawijayahospital.com/find-doctor (diakses 20 Nov 2026):
-Mohammad Julwan Pribadi (660063, foto & lokasi belum ada di direktori), Kaka Renaldi (6051), Alexander Saudale (660209), Haidar Abdullah (6309), Ruben Selamat (8275),
+Mohammad Julwan Pribadi (660063), Kaka Renaldi (6051), Alexander Saudale (660209), Haidar Abdullah (6309), Ruben Selamat (8275),
 Muhammad Faisal Prananda (8297),
 Arnetta Lalisang (660029), Diah Asih Lestari (5997), Indah Jamtani (4275), Syahfreadi (6099),
 Annisa Rahmania Yulman (7318), Barry Army Bakry (5395), Alifi Maulidyan (660134).
