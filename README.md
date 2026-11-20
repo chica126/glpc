@@ -20,7 +20,7 @@ Dibangun dari template Brawijaya Comprehensive Pediatric Center (`bcpc`), dengan
 - Reels memakai embed resmi Instagram (`embed.js`), tingginya menyesuaikan otomatis.
 
 ## Rotator linktochat yang perlu dibuat
-Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rotator berikut di app.linktochat.id (33 rotator):
+Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rotator berikut di app.linktochat.id (29 rotator):
 - sem-glpc-anak
 - sem-glpc-anorektal
 - sem-glpc-bedahanak
@@ -36,8 +36,6 @@ Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rota
 - sem-glpc-drindah
 - sem-glpc-drjulwan
 - sem-glpc-drkaka
-- sem-glpc-drnyoto
-- sem-glpc-drrebekka
 - sem-glpc-drruben
 - sem-glpc-drsyahfreadi
 - sem-glpc-empedu
@@ -48,11 +46,9 @@ Semua CTA memakai format `https://linkto.chat/api/pr/sem-glpc-<slug>`. Buat rota
 - sem-glpc-hernia
 - sem-glpc-hero
 - sem-glpc-herocta
-- sem-glpc-kemoterapi
 - sem-glpc-lambung
 - sem-glpc-skrining
 - sem-glpc-tindakanendoskopi
-- sem-glpc-tumor
 - sem-glpc-usus
 
 ## Sumber data dokter
@@ -60,6 +56,6 @@ Direktori resmi brawijayahospital.com/find-doctor (diakses 20 Nov 2026):
 Mohammad Julwan Pribadi (660063, foto & lokasi belum ada di direktori), Kaka Renaldi (6051), Alexander Saudale (660209), Haidar Abdullah (6309), Ruben Selamat (8275),
 Muhammad Faisal Prananda (8297),
 Arnetta Lalisang (660029), Diah Asih Lestari (5997), Indah Jamtani (4275), Syahfreadi (6099),
-Nyoto Widyo Astoro (4384), Rebekka Napitupulu (1290), Annisa Rahmania Yulman (7318), Barry Army Bakry (5395), Alifi Maulidyan (660134).
+Annisa Rahmania Yulman (7318), Barry Army Bakry (5395), Alifi Maulidyan (660134).
 
 Alamat lokasi mengikuti situs resmi brawijayahospital.com.
