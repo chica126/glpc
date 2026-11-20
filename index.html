@@ -576,8 +576,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @media (max-width:600px){.ins-logos{grid-template-columns:repeat(3,1fr);gap:10px 14px;padding:20px 16px}}
 
   /* Logo 20 Years of Care */
-  .logo img.logo-20{height:54px}
-  @media (max-width:768px){.logo img.logo-20{height:42px}}
+  :root{--header-h:96px}
+  .logo img.logo-20{height:76px;width:auto;max-width:300px;object-fit:contain;object-position:left center}
+  @media (max-width:768px){:root{--header-h:72px}.logo img.logo-20{height:56px;max-width:58vw}}
   /* GLPC: CTA per section + jarak tombol kembali */
   .sec-cta{display:flex;justify-content:center;margin-top:40px}
   .sec-cta--pad{margin:0 auto;padding:8px 24px 72px}
@@ -649,7 +650,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- PLACEHOLDER: ganti heroimage.jpeg dengan foto Gastro, Liver & Pancreas Center (1024x687) -->
         <img src="heroimage.jpeg" alt="Brawijaya Gastro, Liver &amp; Pancreas Center">
         <div class="hero-awards">
-          <img src="award.png" alt="Penghargaan Brawijaya Hospital: INDOMEDEX Awards 2026, Bloomberg Technoz Awards 2026, CNN Indonesia Awards 2026, Allianz Indonesia 2025, CNBC Indonesia Awards 2024, dan BCA Life Awards 2024" loading="lazy">
+          <img src="award-2026.png" alt="Penghargaan Brawijaya Hospital: INDOMEDEX Awards 2026, Bloomberg Technoz Awards 2026, CNN Indonesia Awards 2026, Allianz Indonesia 2025, CNBC Indonesia Awards 2024, dan BCA Life Awards 2024" loading="lazy">
         </div>
       </div>
     </div>

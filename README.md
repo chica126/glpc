@@ -5,7 +5,7 @@ Dibangun dari template Brawijaya Comprehensive Pediatric Center (`bcpc`), dengan
 
 - URL GitHub Pages: https://yanuarnorman.github.io/glpc/
 - File utama: `index.html` (single file, inline `<style>` dan `<script>`)
-- Aset lokal: `logo.svg`, `favicon.svg`, `award.png` (versi Sep 2026, keterangan diubah jadi putih agar terbaca di hero ungu), `ytc.png`, `heroimage.jpeg`, `teknologi-*.jpg`, `images/partner-*.webp` (logo mitra asuransi, disalin dari repo `pci`)
+- Aset lokal: `logo.svg`, `favicon.svg`, `award-2026.png` (award terbaru, keterangan diubah jadi putih agar terbaca di hero ungu), `ytc.png`, `heroimage.jpeg`, `teknologi-*.jpg`, `images/partner-*.webp` (logo mitra asuransi, disalin dari repo `pci`)
 - Foto dokter: CDN Brawijaya (`dte49v1irn0nj.cloudfront.net/assets/<uuid>`), sama seperti BCPC
 
 ## Placeholder yang harus diganti sebelum tayang
